@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="report.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios de Segurança - Sistema Inteligente</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bibliotecas externas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
 </head>
-
-<body class="login">
-  <div class="login-container">
-    <h2 class="loginInitial">Login</h2>
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Usuário" required>
-      <input type="password" id="password" placeholder="Senha" required>
-      <button type="submit">Entrar</button>
-    </form>
-    <p id="message"></p>
-  </div>
-  <script src="script.js"></script>
+<body>
+    <!-- Container principal da aplicação -->
+    <div id="app"></div>
+    
+    <!-- Elemento oculto para geração de PDF -->
+    <div id="report-output" class="report-page hidden"></div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
-
 </html>
